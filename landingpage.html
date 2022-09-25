@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: #cc0000;
+      color: white;
+      font-family: "Exo 2", sans-serif;
+      padding: 1em;
+    }
+
+    @media screen and (max-width: 600px) {
+      #nav-bar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    #main-dv {
+      display: flex;
+    }
+  </style>
+
+  <body>
+    <header id="header">
+      <img
+        src="https://c.static-nike.com/a/images/w_1920,c_limit/bzl2wmsfh7kgdkufrrjq/image.jpg"
+        alt=""
+        id="header-img"
+      />
+
+      <nav id="nav-bar">
+        <ol>
+          <li><a class="nav-link" href="#video">Product Video</a></li>
+          <li><a class="nav-link" href="#form">Contact Us</a></li>
+          <li><a class="nav-link" href="#phone-number">Phone Number</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <div class="flex-container" id="main-dv">
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OzpogCAJf1k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          id="video"
+        ></iframe>
+      </div>
+      <div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="fname">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Type your Email"
+          /><br />
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+
+      <div id="phone-number">Phone Number: +23947234302</div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
